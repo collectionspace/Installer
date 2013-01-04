@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document name="locations">
+  <ns2:locations_common xmlns:ns2="http://collectionspace.org/services/location" xmlns:ns3="http://collectionspace.org/services/jaxb">
+    <shortIdentifier>${shortIdentifier}</shortIdentifier>
+	<refName>urn:cspace:core.collectionspace.org:locationauthorities:name(${authShortIdentifier}):item:name(${shortIdentifier})'${name}'</refName>    
+
+	<locTermGroupList>
+	    <locTermGroup>
+	        <termPrefForLang>false</termPrefForLang>
+	        <termName>${name}</termName>
+	        <termDisplayName>${name}</termDisplayName>
+	        <termType/>
+	        <termSource/>
+	        <termStatus>Approved</termStatus>
+	        <termQualifier/>
+	        <termSourceID/>
+	        <termSourceDetail/>
+	        <termSourceNote/>
+	        <termLanguage/>
+	    </locTermGroup>
+	</locTermGroupList>
+	    
+    <conditionGroupList>
+      <conditionGroup>
+        <conditionNote>Basically clean</conditionNote>
+        <conditionNoteDate>June 11, 1979</conditionNoteDate>
+      </conditionGroup>
+    </conditionGroupList>
+    <securityNote>Kind of safe</securityNote>
+    <accessNote>Only right-thinkers may see</accessNote>
+    <address>123 Main Street, Anytown USA</address>
+    <locationType>Shelf</locationType>
+    <description>This is a test Authority item</description>
+    <source>Some mythical book</source>
+		<sourcePage>Let's say page 39</sourcePage>
+  </ns2:locations_common>
+</document>
+

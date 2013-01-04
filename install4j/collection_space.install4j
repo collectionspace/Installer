@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install4j version="5.1.4" transformSequenceNumber="4">
+  <directoryPresets config="../java_source/CspaceInstallerExtensions" />
+  <application name="collectionspace" distributionSourceDir="" applicationId="1583-1019-6465-3994" mediaDir="out" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="true" shortName="collect_space" publisher="collectionspace" publisherWeb="http://www.collectionspace.org/" version=".1" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.6" javaMaxVersion="1.6" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+    <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
+      <principalLanguage id="en" customLocalizationFile="" />
+      <additionalLanguages />
+    </languages>
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <variables>
+      <variable name="variable" value="" description="" category="" />
+    </variables>
+    <mergedProjects />
+    <codeSigning macEnabled="false" macPkcs12File="" windowsEnabled="false" windowsKeySource="pvkAndSpc" windowsPvkFile="" windowsSpcFile="" windowsPkcs12File="" />
+  </application>
+  <files keepModificationTimes="false" missingFilesStrategy="warn" globalExcludeSuffixes="" defaultOverwriteMode="4" defaultUninstallMode="0" launcherOverwriteMode="3" defaultFileMode="644" defaultDirMode="755">
+    <filesets>
+      <fileset name="win32" id="76" customizedId="" />
+    </filesets>
+    <roots>
+      <root id="77" fileset="76" location="" />
+    </roots>
+    <mountPoints>
+      <mountPoint id="165" root="" location="tomcat" mode="755" />
+      <mountPoint id="166" root="" location="maven" mode="755" />
+      <mountPoint id="167" root="" location="ant" mode="755" />
+      <mountPoint id="230" root="" location="services" mode="755" />
+      <mountPoint id="292" root="" location="" mode="755" />
+      <mountPoint id="168" root="77" location="jdk" mode="755" />
+      <mountPoint id="78" root="77" location="" mode="755" />
+    </mountPoints>
+    <entries>
+      <dirEntry mountPoint="165" file="install_source/common/apache-tomcat-6.0.33" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="apache-tomcat-6.0.33" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+        <exclude />
+      </dirEntry>
+      <dirEntry mountPoint="166" file="install_source/common/apache-maven-3.0.4" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="apache-maven-3.0.4" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+        <exclude />
+      </dirEntry>
+      <dirEntry mountPoint="167" file="install_source/common/apache-ant-1.8.4" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="apache-ant-1.8.4" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+        <exclude />
+      </dirEntry>
+      <dirEntry mountPoint="230" file="install_source/common/collectionspace-services-51c7698" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="collectionspace-services-51c7698" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+        <exclude />
+      </dirEntry>
+      <fileEntry mountPoint="292" file="install_source/common/functions.sql" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <dirEntry mountPoint="168" file="install_source/win32/jdk1.6.0_37" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="jdk1.6.0_37" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+        <exclude />
+      </dirEntry>
+      <fileEntry mountPoint="78" file="install_source/win32/ImageMagick-6.8.0-8-Q16-windows-dll.exe" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="78" file="install_source/win32/postgresql-9.2.2-1-windows.exe" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="78" file="install_source/win32/pg_hba.conf" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+    </entries>
+    <components />
+  </files>
+  <launchers />
+  <installerGui installerType="1" addOnAppId="" suggestPreviousLocations="true" autoUpdateDescriptorUrl="" useAutoUpdateBaseUrl="false" autoUpdateBaseUrl="">
+    <customCode>
+      <scanDirectory location="../java_source/CspaceInstallerExtensions/target" />
+    </customCode>
+    <autoUpdate useMinUpdatableVersion="false" minUpdatableVersion="" useMaxUpdatableVersion="false" maxUpdatableVersion="">
+      <commentFiles />
+      <customAttributes />
+    </autoUpdate>
+    <applications>
+      <application name="" id="installer" customizedId="" beanClass="com.install4j.runtime.beans.applications.InstallerApplication" enabled="true" commentSet="false" comment="" actionElevationType="none" fileset="" customIcnsFile="" customIcoFile="" macEntitlementsFile="" automaticLauncherIntegration="false" launchMode="startupFirstWindow" launchInNewProcess="false" launchSchedule="updateSchedule" allLaunchers="true">
+        <serializedBean>
+          <java class="java.beans.XMLDecoder">
+            <object class="com.install4j.runtime.beans.applications.InstallerApplication" />
+          </java>
+        </serializedBean>
+        <launcherIds />
+        <variables>
+          <variable name="Postgres_data" value="" description="" category="" valueClass="undefined" />
+        </variables>
+        <startup>
+          <screen name="" id="1" customizedId="" beanClass="com.install4j.runtime.beans.screens.StartupScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.StartupScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="13" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RequestPrivilegesAction" enabled="true" commentSet="false" comment="" actionElevationType="none" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RequestPrivilegesAction">
+                      <void property="failIfNotRootUnix">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="obtainIfAdminMac">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="obtainIfNormalMac">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="obtainIfNormalWin">
+                        <boolean>true</boolean>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+        </startup>
+        <screens>
+          <screen name="" id="2" customizedId="" beanClass="com.install4j.runtime.beans.screens.WelcomeScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.WelcomeScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="3" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="true" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction">
+                      <void property="excludedVariables">
+                        <array class="java.lang.String" length="1">
+                          <void index="0">
+                            <string>sys.installationDir</string>
+                          </void>
+                        </array>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition>context.getBooleanVariable("sys.confirmedUpdateInstallation")</condition>
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+          <screen name="" id="434" customizedId="" beanClass="com.install4j.runtime.beans.screens.LicenseScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.LicenseScreen">
+                  <void property="displayedTextFile">
+                    <void property="languageIdToExternalFile">
+                      <void method="put">
+                        <string>en</string>
+                        <object class="com.install4j.api.beans.ExternalFile">
+                          <string>${installer:sys.contentDir}/README.txt</string>
+                        </object>
+                      </void>
+                    </void>
+                  </void>
+                </object>
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+          <screen name="" id="4" customizedId="" beanClass="com.install4j.runtime.beans.screens.InstallationDirectoryScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.InstallationDirectoryScreen" />
+              </java>
+            </serializedBean>
+            <condition>!context.getBooleanVariable("sys.confirmedUpdateInstallation")</condition>
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="5" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="true" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction">
+                      <void property="excludedVariables">
+                        <array class="java.lang.String" length="1">
+                          <void index="0">
+                            <string>sys.installationDir</string>
+                          </void>
+                        </array>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition>context.getVariable("sys.responseFile") == null</condition>
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+          <screen name="" id="6" customizedId="" beanClass="com.install4j.runtime.beans.screens.ComponentsScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.ComponentsScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+          <screen name="" id="685" customizedId="" beanClass="com.install4j.runtime.beans.screens.FormScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.FormScreen">
+                  <void property="subTitle">
+                    <string>Is postgres</string>
+                  </void>
+                  <void property="title">
+                    <string>Postgres</string>
+                  </void>
+                </object>
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+          <screen name="Select Ghostscript" id="611" customizedId="" beanClass="com.install4j.runtime.beans.screens.FormScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.FormScreen">
+                  <void property="subTitle">
+                    <string>Yuo can choose to install Ghostscript which provides PDF previews of something</string>
+                  </void>
+                  <void property="title">
+                    <string>Install Ghostscript</string>
+                  </void>
+                </object>
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents>
+              <formComponent name="" id="613" customizedId="" beanClass="com.install4j.runtime.beans.formcomponents.CheckboxComponent" enabled="true" commentSet="false" comment="" insetTop="" insetLeft="" insetBottom="" insetRight="" resetInitOnPrevious="false">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.formcomponents.CheckboxComponent">
+                      <void property="labelText">
+                        <string>Install Ghostscript</string>
+                      </void>
+                      <void property="variableName">
+                        <string>INSTALL_GHOSTSCRIPT</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <initScript />
+                <visibilityScript />
+              </formComponent>
+            </formComponents>
+          </screen>
+          <screen name="" id="8" customizedId="" beanClass="com.install4j.runtime.beans.screens.InstallationScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="true" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.InstallationScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="9" customizedId="" beanClass="com.install4j.runtime.beans.actions.InstallFilesAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="${i18n:FileCorrupted}">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.InstallFilesAction" />
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="Postgres install" id="28" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="WTF">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="2">
+                          <void index="0">
+                            <string>--mode</string>
+                          </void>
+                          <void index="1">
+                            <string>unattended</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>postgresql-9.2.2-1-windows.exe</string>
+                        </object>
+                      </void>
+                      <void property="rollbackExecutable">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_base}/uninstall-postgresql.exe</string>
+                        </object>
+                      </void>
+                      <void property="rollbackWorkingDirectory">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_base}</string>
+                        </object>
+                      </void>
+                      <void property="useRollbackExecutable">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="waitForStreams">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>.</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="Imagemagick install" id="223" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="WTF">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="1">
+                          <void index="0">
+                            <string>/VERYSILENT</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>ImageMagick-6.8.0-8-Q16-windows-dll.exe</string>
+                        </object>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="waitForStreams">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>.</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="ghostscript download" id="607" customizedId="" beanClass="com.install4j.runtime.beans.actions.update.DownloadFileAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.update.DownloadFileAction">
+                      <void property="targetFile">
+                        <string>${installer:sys.installationDir}\gs906w32.exe</string>
+                      </void>
+                      <void property="url">
+                        <string>http://downloads.ghostscript.com/public/gs906w32.exe</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition>return context.getVariable("INSTALL_GHOSTSCRIPT").equals(true);</condition>
+              </action>
+              <action name="Ghostscript Install" id="606" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="WTF">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="1">
+                          <void index="0">
+                            <string>/S</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>gs906w32.exe</string>
+                        </object>
+                      </void>
+                      <void property="rollbackExecutable">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_base}/uninstall-postgresql.exe</string>
+                        </object>
+                      </void>
+                      <void property="rollbackWorkingDirectory">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_base}</string>
+                        </object>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="waitForStreams">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>.</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition>return context.getVariable("INSTALL_GHOSTSCRIPT").equals(true);</condition>
+              </action>
+              <action name="" id="499" customizedId="" beanClass="com.install4j.runtime.beans.actions.control.RunScriptAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.control.RunScriptAction">
+                      <void property="script">
+                        <object class="com.install4j.api.beans.ScriptProperty">
+                          <void property="value">
+                            <string> String root = context.getInstallationDirectory().getName();
+ context.setVariable("CSPACE_JEESERVER_HOME", root+ "\\tomcat");
+ context.setVariable("CATALINA_HOME", "%CSPACE_JEESERVER_HOME%");
+ context.setVariable("JAVA_HOME", "%CSPACE_JEESERVER_HOME%");
+ context.setVariable("CATALINA_OPTS", "-Xmx1024m -XX:MaxPermSize=384m");
+ context.setVariable("DB_USER", "postgres");
+ context.setVariable("DB_PASSWORD_NUXEO", "postgres");
+ context.setVariable("DB_PASSWORD_CSPACE", "postgres");
+ context.setVariable("DB_PASSWORD", "postgres");
+ context.setVariable("ANT_OPTS", "-Xmx768m -XX:MaxPermSize=512m");
+ context.setVariable("MAVEN_OPTS", "-Xmx768m -XX:MaxPermSize=512m");
+ context.setVariable("ADM_LIFESCI", "admin@lifesci.collectionspace.org");
+ context.setVariable("ADM_CORE", "admin@core.collectionspace.org");
+ context.setVariable("ADM_ID", "Administrator");
+ return true;</string>
+                          </void>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition>return context.getVariable("INSTALL_GHOSTSCRIPT").toString().equalsIgnoreCase("true");</condition>
+              </action>
+              <action name="" id="124" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>${installer:sys.installationDir}\tomcat</string>
+                      </void>
+                      <void property="variableName">
+                        <string>CSPACE_JEESERVER_HOME</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="169" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>${installer:sys.installationDir}\jdk</string>
+                      </void>
+                      <void property="variableName">
+                        <string>JAVA_HOME</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="125" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>${installer:sys.installationDir}\tomcat</string>
+                      </void>
+                      <void property="variableName">
+                        <string>CATALINA_HOME</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="221" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>${installer:sys.installationDir}\maven</string>
+                      </void>
+                      <void property="variableName">
+                        <string>M2_HOME</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="220" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>%M2_HOME%\bin.</string>
+                      </void>
+                      <void property="variableName">
+                        <string>M2</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="170" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>-Xmx768m -XX:MaxPermSize=512m</string>
+                      </void>
+                      <void property="variableName">
+                        <string>ANT_OPTS</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="171" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>-Xmx768m -XX:MaxPermSize=512m</string>
+                      </void>
+                      <void property="variableName">
+                        <string>MAVEN_OPTS</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="126" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>-Xmx1024m -XX:MaxPermSize=384m</string>
+                      </void>
+                      <void property="variableName">
+                        <string>CATALINA_OPTS</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="222" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>${installer:sys.installationDir}\ant</string>
+                      </void>
+                      <void property="variableName">
+                        <string>ANT_HOME</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="224" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>postgres</string>
+                      </void>
+                      <void property="variableName">
+                        <string>DB_USER</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="225" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>postgres</string>
+                      </void>
+                      <void property="variableName">
+                        <string>DB_PASSWORD_NUXEO</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="226" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>postgres</string>
+                      </void>
+                      <void property="variableName">
+                        <string>DB_PASSWORD_CSPACE</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="561" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction" enabled="true" commentSet="true" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.ModifyEnvironmentVariableAction">
+                      <void property="userSpecific">
+                        <boolean>false</boolean>
+                      </void>
+                      <void property="value">
+                        <string>postgres</string>
+                      </void>
+                      <void property="variableName">
+                        <string>DB_PASSWORD</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="windows_ Stop Postgres" id="394" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="Could not stop Postrges, you'll have to do it yourself">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="2">
+                          <void index="0">
+                            <string>STOP</string>
+                          </void>
+                          <void index="1">
+                            <string>postgresql-9.2</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>${installer:sys.system32Dir}/net.exe</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="logArguments">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>.</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="common_ Set up Maven Home" id="435" customizedId="" beanClass="com.install4j.runtime.beans.actions.text.ReplaceInstallerVariablesAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="Unable to set Maven repository location">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.text.ReplaceInstallerVariablesAction">
+                      <void property="encoding">
+                        <string />
+                      </void>
+                      <void property="failIfNoReplacement">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="files">
+                        <array class="java.io.File" length="1">
+                          <void index="0">
+                            <object class="java.io.File">
+                              <string>maven/conf/settings.xml</string>
+                            </object>
+                          </void>
+                        </array>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="233" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="3">
+                          <void index="0">
+                            <string>clean</string>
+                          </void>
+                          <void index="1">
+                            <string>install</string>
+                          </void>
+                          <void index="2">
+                            <string>-DskipTests</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="environmentVariables">
+                        <void method="put">
+                          <string>JAVA_HOME</string>
+                          <string>${installer:sys.installationDir}\jdk</string>
+                        </void>
+                        <void method="put">
+                          <string>M2_HOME</string>
+                          <string>${installer:sys.installationDir}\maven</string>
+                        </void>
+                        <void method="put">
+                          <string>CSPACE_JEESERVER_HOME</string>
+                          <string>${installer:sys.installationDir}\tomcat</string>
+                        </void>
+                        <void method="put">
+                          <string>MAVEN_OPTS</string>
+                          <string>-Xmx768m -XX:MaxPermSize=512m</string>
+                        </void>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>maven/bin/mvn.bat</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="logArguments">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>services</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="356" customizedId="" beanClass="com.install4j.runtime.beans.actions.registry.ReadRegistryValueAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="Can't read key">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.registry.ReadRegistryValueAction">
+                      <void property="keyName">
+                        <string>SOFTWARE\PostgreSQL\Installations\postgresql-9.2</string>
+                      </void>
+                      <void property="registryRoot">
+                        <object class="com.install4j.api.windows.RegistryRoot" field="HKEY_LOCAL_MACHINE" />
+                      </void>
+                      <void property="valueName">
+                        <string>Data Directory</string>
+                      </void>
+                      <void property="variableName">
+                        <string>Postgres_data</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="397" customizedId="" beanClass="com.install4j.runtime.beans.actions.registry.ReadRegistryValueAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="Can't read key">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.registry.ReadRegistryValueAction">
+                      <void property="keyName">
+                        <string>SOFTWARE\PostgreSQL\Installations\postgresql-9.2</string>
+                      </void>
+                      <void property="registryRoot">
+                        <object class="com.install4j.api.windows.RegistryRoot" field="HKEY_LOCAL_MACHINE" />
+                      </void>
+                      <void property="valueName">
+                        <string>Base Directory</string>
+                      </void>
+                      <void property="variableName">
+                        <string>Postgres_base</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="358" customizedId="" beanClass="com.install4j.runtime.beans.actions.files.CopyFileAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="2" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.files.CopyFileAction">
+                      <void property="destinationFile">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_data}</string>
+                        </object>
+                      </void>
+                      <void property="files">
+                        <array class="java.io.File" length="1">
+                          <void index="0">
+                            <object class="java.io.File">
+                              <string>pg_hba.conf</string>
+                            </object>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="overwriteMode">
+                        <object class="com.install4j.api.context.OverwriteMode" field="ALWAYS" />
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="496" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="Could not stop Postrges, you'll have to do it yourself">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="2">
+                          <void index="0">
+                            <string>START</string>
+                          </void>
+                          <void index="1">
+                            <string>postgresql-9.2</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>${installer:sys.system32Dir}/net.exe</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="logArguments">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>.</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="79" customizedId="" beanClass="com.install4j.runtime.beans.actions.files.DeleteFileAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.files.DeleteFileAction">
+                      <void property="files">
+                        <array class="java.io.File" length="3">
+                          <void index="0">
+                            <object class="java.io.File">
+                              <string>postgresql-9.2.2-1-windows.exe</string>
+                            </object>
+                          </void>
+                          <void index="1">
+                            <object class="java.io.File">
+                              <string>ImageMagick-6.8.0-8-Q16-windows-dll.exe</string>
+                            </object>
+                          </void>
+                          <void index="2">
+                            <object class="java.io.File">
+                              <string>gs906w32.exe</string>
+                            </object>
+                          </void>
+                        </array>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="396" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="could not run PSQL">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="2">
+                          <void index="0">
+                            <string>-Upostgres</string>
+                          </void>
+                          <void index="1">
+                            <string>-ffunctions.sql</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="environmentVariables">
+                        <void method="put">
+                          <string>PGPASSWORD</string>
+                          <string>postgres</string>
+                        </void>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>${installer:Postgres_base}/bin/psql.exe</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="logArguments">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>${installer:sys.installationDir}</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="497" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="4">
+                          <void index="0">
+                            <string>undeploy</string>
+                          </void>
+                          <void index="1">
+                            <string>deploy</string>
+                          </void>
+                          <void index="2">
+                            <string>create_db</string>
+                          </void>
+                          <void index="3">
+                            <string>import</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="environmentVariables">
+                        <void method="put">
+                          <string>JAVA_HOME</string>
+                          <string>${installer:sys.installationDir}\jdk</string>
+                        </void>
+                        <void method="put">
+                          <string>M2_HOME</string>
+                          <string>${installer:sys.installationDir}\maven</string>
+                        </void>
+                        <void method="put">
+                          <string>ANT_HOME</string>
+                          <string>${installer:sys.installationDir}\ant</string>
+                        </void>
+                        <void method="put">
+                          <string>CSPACE_JEESERVER_HOME</string>
+                          <string>${installer:sys.installationDir}\tomcat</string>
+                        </void>
+                        <void method="put">
+                          <string>CATALINA_HOME</string>
+                          <string>${installer:sys.installationDir}\tomcat</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_USER</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD_CSPACE</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD_NUXEO</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>PATH</string>
+                          <string>${installer:sys.installationDir}\maven\bin;C:\Windows\system32</string>
+                        </void>
+                        <void method="put">
+                          <string>PATHEXT</string>
+                          <string>.exe;.bat</string>
+                        </void>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>ant/bin/ant.bat</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="wait">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>services</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="563" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RunExecutableAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RunExecutableAction">
+                      <void property="arguments">
+                        <array class="java.lang.String" length="4">
+                          <void index="0">
+                            <string>undeploy</string>
+                          </void>
+                          <void index="1">
+                            <string>deploy</string>
+                          </void>
+                          <void index="2">
+                            <string>create_db</string>
+                          </void>
+                          <void index="3">
+                            <string>import</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="environmentVariables">
+                        <void method="put">
+                          <string>JAVA_HOME</string>
+                          <string>${installer:sys.installationDir}\jdk</string>
+                        </void>
+                        <void method="put">
+                          <string>M2_HOME</string>
+                          <string>${installer:sys.installationDir}\maven</string>
+                        </void>
+                        <void method="put">
+                          <string>ANT_HOME</string>
+                          <string>${installer:sys.installationDir}\ant</string>
+                        </void>
+                        <void method="put">
+                          <string>CSPACE_JEESERVER_HOME</string>
+                          <string>${installer:sys.installationDir}\tomcat</string>
+                        </void>
+                        <void method="put">
+                          <string>CATALINA_HOME</string>
+                          <string>${installer:sys.installationDir}\tomcat</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_USER</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD_CSPACE</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD_NUXEO</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>DB_PASSWORD</string>
+                          <string>postgres</string>
+                        </void>
+                        <void method="put">
+                          <string>PATH</string>
+                          <string>${installer:sys.installationDir}\maven\bin;C:\Windows\system32</string>
+                        </void>
+                        <void method="put">
+                          <string>PATHEXT</string>
+                          <string>.exe;.bat</string>
+                        </void>
+                      </void>
+                      <void property="executable">
+                        <object class="java.io.File">
+                          <string>tomcat/bin/startup.bat</string>
+                        </object>
+                      </void>
+                      <void property="keepConsoleWindow">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="showWindowsConsole">
+                        <boolean>true</boolean>
+                      </void>
+                      <void property="workingDirectory">
+                        <object class="java.io.File">
+                          <string>services</string>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="Initialize lifesci authorities" id="683" customizedId="" beanClass="com.install4j.runtime.beans.actions.control.RunScriptAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.control.RunScriptAction">
+                      <void property="script">
+                        <object class="com.install4j.api.beans.ScriptProperty">
+                          <void property="value">
+                            <string>import org.collectionspace.installer.AuthorizedHttpRequest;
+String user = context.getVariable("ADM_LIFESCI").toString();
+String pw = context.getVariable("ADM_ID").toString();
+AuthorizedHttpRequest req = new AuthorizedHttpRequest("http://localhost:8180/collectionspace/tenant/lifesci/login",user,pw);
+req.get("http://localhost:8180/collectionspace/tenant/lifesci/authorities/initialise");
+return true;
+</string>
+                          </void>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="Initialize core authorities" id="684" customizedId="" beanClass="com.install4j.runtime.beans.actions.control.RunScriptAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.control.RunScriptAction">
+                      <void property="script">
+                        <object class="com.install4j.api.beans.ScriptProperty">
+                          <void property="value">
+                            <string>import org.collectionspace.installer.AuthorizedHttpRequest;
+String user = context.getVariable("ADM_CORE").toString();
+String pw = context.getVariable("ADM_ID").toString();
+AuthorizedHttpRequest req = new AuthorizedHttpRequest("http://localhost:8180/collectionspace/tenant/core/login",user,pw);
+req.get("http://localhost:8180/collectionspace/tenant/core/authorities/initialise");
+return true;
+</string>
+                          </void>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+          <screen name="" id="681" customizedId="" beanClass="com.install4j.runtime.beans.screens.FormScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.FormScreen">
+                  <void property="subTitle">
+                    <string>Collectionspaec comes with two initial tennants, you can choose to load sample data.</string>
+                  </void>
+                  <void property="title">
+                    <string>Load Inital Tenant Data</string>
+                  </void>
+                </object>
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="678" customizedId="" beanClass="com.install4j.runtime.beans.actions.control.RunScriptAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.control.RunScriptAction">
+                      <void property="script">
+                        <object class="com.install4j.api.beans.ScriptProperty">
+                          <void property="value">
+                            <string>import org.collectionspace.installer.AuthorizedHttpRequest;
+
+String user = context.getVariable("ADM_LIFESCI").toString();
+String pw = context.getVariable("ADM_ID").toString();
+AuthorizedHttpRequest req = new AuthorizedHttpRequest("http://httpbin.org/post",user,pw);
+req.get("http://httpbin.org/get");
+return true;
+</string>
+                          </void>
+                        </object>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+            </actions>
+            <formComponents>
+              <formComponent name="" id="682" customizedId="" beanClass="com.install4j.runtime.beans.formcomponents.ListComponent" enabled="true" commentSet="false" comment="" insetTop="" insetLeft="" insetBottom="" insetRight="" resetInitOnPrevious="false">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.formcomponents.ListComponent">
+                      <void property="initiallySelectedIndex">
+                        <int>-1</int>
+                      </void>
+                      <void property="listEntries">
+                        <array class="java.lang.String" length="2">
+                          <void index="0">
+                            <string>Initialize Core Tenant</string>
+                          </void>
+                          <void index="1">
+                            <string>Inistialize Life-sciences Tenant</string>
+                          </void>
+                        </array>
+                      </void>
+                      <void property="variableName">
+                        <string>DATA_INIT</string>
+                      </void>
+                    </object>
+                  </java>
+                </serializedBean>
+                <initScript />
+                <visibilityScript />
+              </formComponent>
+            </formComponents>
+          </screen>
+          <screen name="" id="12" customizedId="" beanClass="com.install4j.runtime.beans.screens.FinishedScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="true" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.FinishedScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+        </screens>
+      </application>
+      <application name="" id="uninstaller" customizedId="" beanClass="com.install4j.runtime.beans.applications.UninstallerApplication" enabled="true" commentSet="false" comment="" actionElevationType="none" fileset="" customIcnsFile="" customIcoFile="" macEntitlementsFile="" automaticLauncherIntegration="false" launchMode="startupFirstWindow" launchInNewProcess="false" launchSchedule="updateSchedule" allLaunchers="true">
+        <serializedBean>
+          <java class="java.beans.XMLDecoder">
+            <object class="com.install4j.runtime.beans.applications.UninstallerApplication" />
+          </java>
+        </serializedBean>
+        <launcherIds />
+        <variables />
+        <startup>
+          <screen name="" id="14" customizedId="" beanClass="com.install4j.runtime.beans.screens.StartupScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.StartupScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="20" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.LoadResponseFileAction" />
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+              <action name="" id="21" customizedId="" beanClass="com.install4j.runtime.beans.actions.misc.RequireInstallerPrivilegesAction" enabled="true" commentSet="false" comment="" actionElevationType="none" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.misc.RequireInstallerPrivilegesAction" />
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+        </startup>
+        <screens>
+          <screen name="" id="15" customizedId="" beanClass="com.install4j.runtime.beans.screens.UninstallWelcomeScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.UninstallWelcomeScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+          <screen name="" id="16" customizedId="" beanClass="com.install4j.runtime.beans.screens.UninstallationScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="false" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.UninstallationScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions>
+              <action name="" id="17" customizedId="" beanClass="com.install4j.runtime.beans.actions.UninstallFilesAction" enabled="true" commentSet="false" comment="" actionElevationType="elevated" rollbackBarrier="false" multiExec="false" failureStrategy="1" errorMessage="">
+                <serializedBean>
+                  <java class="java.beans.XMLDecoder">
+                    <object class="com.install4j.runtime.beans.actions.UninstallFilesAction" />
+                  </java>
+                </serializedBean>
+                <condition />
+              </action>
+            </actions>
+            <formComponents />
+          </screen>
+          <screen name="" id="19" customizedId="" beanClass="com.install4j.runtime.beans.screens.UninstallFailureScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="true" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.UninstallFailureScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+          <screen name="" id="18" customizedId="" beanClass="com.install4j.runtime.beans.screens.UninstallSuccessScreen" enabled="true" commentSet="false" comment="" actionElevationType="inherit" rollbackBarrier="false" backButton="2" finishScreen="true" wizardIndexChangeType="unchanged" wizardIndexKey="">
+            <serializedBean>
+              <java class="java.beans.XMLDecoder">
+                <object class="com.install4j.runtime.beans.screens.UninstallSuccessScreen" />
+              </java>
+            </serializedBean>
+            <condition />
+            <validation />
+            <preActivation />
+            <postActivation />
+            <actions />
+            <formComponents />
+          </screen>
+        </screens>
+      </application>
+    </applications>
+  </installerGui>
+  <mediaSets>
+    <windows name="Windows" id="23" customizedId="" mediaFileName="" installDir="collection_space" overridePrincipalLanguage="false" jreBitType="32" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" useLegacyMediaFileIds="false" legacyMediaFileIds="" includedJRE="windows-x86-1.6.0_35" manualJREEntry="false" bundleType="1" jreURL="" jreShared="false" directDownload="false" installOnlyIfNecessary="false" customInstallBaseDir="~" contentFilesType="1" downloadURL="" verifyIntegrity="true">
+      <excludedLaunchers />
+      <excludedBeans>
+        <bean refId="609" />
+      </excludedBeans>
+      <overriddenPrincipalLanguage id="en" customLocalizationFile="" />
+      <exclude />
+      <variables />
+      <autoUpdate useMinUpdatableVersion="false" minUpdatableVersion="" useMaxUpdatableVersion="false" maxUpdatableVersion="">
+        <commentFiles />
+        <customAttributes />
+      </autoUpdate>
+      <excludedComponents />
+      <includedDownloadableComponents />
+    </windows>
+  </mediaSets>
+  <buildIds buildAll="false">
+    <mediaSet refId="23" />
+  </buildIds>
+  <buildOptions verbose="false" faster="true" disableSigning="false" debug="false" />
+</install4j>
+

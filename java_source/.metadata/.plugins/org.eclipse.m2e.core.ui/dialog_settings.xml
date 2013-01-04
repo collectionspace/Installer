@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="issueManagementUrl">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="795" key="height"/>
+		<item value="760" key="width"/>
+		<item value="600" key="y"/>
+		<item value="1148" key="x"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="CspaceInstallerExtensions"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="CspaceInstallerExtensions"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,5 @@
+package org.collectionspace.installer;
+
+public class AuthorizedHttpRequest {
+
+}

@@ -1,0 +1,392 @@
+[
+  {
+    "symbolicName": "junit-4.8.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f2975548f836416306ef1dee748d956f04733915",
+    "jarFileModificationDate": "2012-11-16T07:40:15-05:00",
+    "location": "/home/rob/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient-cache",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fa72032fbd23461bf6336654e2dcaefa63309ace",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/httpclient-cache-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "i4jruntime-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "94679d952e8c0f103478eb73e347c4c9c047f911",
+    "jarFileModificationDate": "2012-12-31T18:05:07-05:00",
+    "location": "/home/rob/.m2/repository/com/install4j/i4jruntime/1.0/i4jruntime-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20090501071000"
+    },
+    "jarFileFingerprint": "254c9660266e1177c94b1a9ba05f6f757e7fb85a",
+    "jarFileModificationDate": "2012-06-14T13:43:23-04:00",
+    "location": "/home/rob/dev_support/eclipse-4/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd",
+    "jarFileModificationDate": "2012-12-31T17:43:34-05:00",
+    "location": "/home/rob/.m2/repository/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "608fcc9ae6f13523f33ee44c7537d1d532c654ba",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e2b6cd0bd492a6930e76b7063d547eb23d08aa16",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2012-11-16T07:40:30-05:00",
+    "location": "/home/rob/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2380d475cf31c2d26437ce833246e641698cf620",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "872a71eac51131524f72f3100781dd88a42c9ccc",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/httpclient-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "69cbe1d59ad26159f2490079761a74e3d2a6afcd",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "HTTPClient",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6997fb56c359d2e18a21da12f75d9885617b3547",
+    "jarFileModificationDate": "2012-12-31T16:44:00-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/HTTPClient.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8367ff02f729bfc46a6fb8b4d66860666baf8e93",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b7f0fc8f61ecadeb3695f0b9464755eee44374d4",
+    "jarFileModificationDate": "2012-11-16T07:41:05-05:00",
+    "location": "/home/rob/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpmime",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "92b7ae91cb55150192341962dd7254ef898768ca",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/httpmime-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e46a2002c6ef9a9a8a59d81b116dc8f902aa29de",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "i4jruntime",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "94679d952e8c0f103478eb73e347c4c9c047f911",
+    "jarFileModificationDate": "2012-12-30T11:39:01-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/i4jruntime.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/httpcore-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9ca1391e7e9a97b0c48f1c54d69a6687ecfe725a",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ab40a72dbc3a4a3d99511c617f9331efabb1b4d6",
+    "jarFileModificationDate": "2012-12-31T15:21:25-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/httpcore-4.2.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "680e0d48af1da8f9d70a621c0a73b2cca4954841",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c4c7923b11e98bc8d1d32bfd2ff6363d212ead80",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "329514d8ca323e59770ec8ac605bfd76b0dcabc7",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f7cf82c2c188e805e53a5525e2c1e055237770c6",
+    "jarFileModificationDate": "2012-04-28T19:20:00-04:00",
+    "location": "/home/rob/dev_support/eclipse-4/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ee8dfd1a0efa78a07222eda60b8892972fbb6165",
+    "jarFileModificationDate": "2012-12-31T17:43:35-05:00",
+    "location": "/home/rob/.m2/repository/org/apache/httpcomponents/httpclient/4.2.2/httpclient-4.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2eab85592e7da5e0cf20f7fab4b61e0eae18e1fa",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b7f0fc8f61ecadeb3695f0b9464755eee44374d4",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/commons-codec-1.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "246a4ba0125debbb7fd3d63d140c550b779a034f",
+    "jarFileModificationDate": "2012-10-30T16:24:33-04:00",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.fluent-hc",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2cae6ef91f1abc1e032329d4f6380b548d329895",
+    "jarFileModificationDate": "2012-12-31T16:49:24-05:00",
+    "location": "/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/libs/fluent-hc-4.2.2.jar",
+    "javaRuntime": false
+  }
+]

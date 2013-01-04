@@ -1,0 +1,198 @@
+2012-12-31 13:26:44,617 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 13:26:44,746 [main] ERROR o.e.r.i.r.repo.ModelRepositoryIndex - Failed to open search index.
+org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@/home/rob/safe_amerika/development/collection_space/java_source/.metadata/.plugins/org.eclipse.recommenders.rcp/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1e9f3b0e: files: []
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712) ~[org.apache.lucene.core_3.5.0.v20120319-2345.jar:3.5.0 1204988 - simon - 2011-11-22 14:46:51]
+	at org.apache.lucene.index.DirectoryReader.open(DirectoryReader.java:75) ~[org.apache.lucene.core_3.5.0.v20120319-2345.jar:3.5.0 1204988 - simon - 2011-11-22 14:46:51]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:462) ~[org.apache.lucene.core_3.5.0.v20120319-2345.jar:3.5.0 1204988 - simon - 2011-11-22 14:46:51]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:308) ~[org.apache.lucene.core_3.5.0.v20120319-2345.jar:3.5.0 1204988 - simon - 2011-11-22 14:46:51]
+	at org.eclipse.recommenders.internal.rcp.repo.ModelRepositoryIndex.open(ModelRepositoryIndex.java:64) ~[org.eclipse.recommenders.rcp_1.0.0.v20120914-1432-b175.jar:na]
+	at org.eclipse.recommenders.internal.rcp.wiring.RecommendersModule$ServicesInitializer.<init>(RecommendersModule.java:365) [org.eclipse.recommenders.rcp_1.0.0.v20120914-1432-b175.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_09]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) [na:1.7.0_09]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [na:1.7.0_09]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525) [na:1.7.0_09]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:85) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:254) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1031) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.Scopes$1$1.get(Scopes.java:65) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:40) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:204) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:198) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1024) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:198) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:179) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:109) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.Guice.createInjector(Guice.java:95) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at com.google.inject.Guice.createInjector(Guice.java:72) [com.google.inject_3.0.0.v201203062045.jar:na]
+	at org.eclipse.recommenders.injection.InjectionService.getInjector(InjectionService.java:47) [org.eclipse.recommenders.injection_1.0.0.v20120914-1432-b175.jar:na]
+	at org.eclipse.recommenders.injection.ExtensionFactory.<init>(ExtensionFactory.java:28) [org.eclipse.recommenders.injection_1.0.0.v20120914-1432-b175.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_09]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) [na:1.7.0_09]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [na:1.7.0_09]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525) [na:1.7.0_09]
+	at java.lang.Class.newInstance0(Class.java:372) [na:1.7.0_09]
+	at java.lang.Class.newInstance(Class.java:325) [na:1.7.0_09]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184) [org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905) [org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243) [org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55) [org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.createComputer(CompletionProposalComputerDescriptor.java:308) [org.eclipse.jdt.ui_3.8.1.v20120814-144251.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.getComputer(CompletionProposalComputerDescriptor.java:275) [org.eclipse.jdt.ui_3.8.1.v20120814-144251.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.sessionStarted(CompletionProposalComputerDescriptor.java:418) [org.eclipse.jdt.ui_3.8.1.v20120814-144251.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.sessionStarted(CompletionProposalCategory.java:389) [org.eclipse.jdt.ui_3.8.1.v20120814-144251.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor$CompletionListener.assistSessionStarted(ContentAssistProcessor.java:119) [org.eclipse.jdt.ui_3.8.1.v20120814-144251.jar:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2221) [org.eclipse.jface.text_3.8.1.v20120828-155502.jar:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1696) [org.eclipse.jface.text_3.8.1.v20120828-155502.jar:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.access$6(ContentAssistant.java:1687) [org.eclipse.jface.text_3.8.1.v20120828-155502.jar:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:376) [org.eclipse.jface.text_3.8.1.v20120828-155502.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.gtk.linux.x86_64_3.100.1.v4234e.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.gtk.linux.x86_64_3.100.1.v4234e.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3529) [org.eclipse.swt.gtk.linux.x86_64_3.100.1.v4234e.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3182) [org.eclipse.swt.gtk.linux.x86_64_3.100.1.v4234e.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029) [org.eclipse.e4.ui.workbench.swt_0.10.2.v20120802-184737.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923) [org.eclipse.e4.ui.workbench.swt_0.10.2.v20120802-184737.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86) [org.eclipse.e4.ui.workbench_0.10.3.v20120822-140642.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588) [org.eclipse.ui.workbench_3.103.1.v20120906-120042.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543) [org.eclipse.ui.workbench_3.103.1.v20120906-120042.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149) [org.eclipse.ui.workbench_3.103.1.v20120906-120042.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124) [org.eclipse.ui.ide.application_1.0.400.v20120523-1955.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.100.v20120522-1841.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110) [org.eclipse.osgi_3.8.1.v20120830-144521.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79) [org.eclipse.osgi_3.8.1.v20120830-144521.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353) [org.eclipse.osgi_3.8.1.v20120830-144521.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180) [org.eclipse.osgi_3.8.1.v20120830-144521.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_09]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_09]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_09]
+	at java.lang.reflect.Method.invoke(Method.java:601) ~[na:1.7.0_09]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+2012-12-31 13:26:44,760 [pool-6-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 13:26:45,405 [pool-8-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 16:50:31,342 [pool-10-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 16:50:31,867 [pool-12-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 16:50:32,151 [pool-14-thread-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:40:01,840 [Worker-537] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-12-31 17:40:01,853 [Worker-537] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:40:02,595 [Worker-537] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 754 ms
+2012-12-31 17:40:13,038 [Worker-541] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:40:13,350 [Worker-541] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/src/main/java
+2012-12-31 17:40:13,353 [Worker-541] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/test/java
+2012-12-31 17:40:13,528 [Worker-541] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-12-31 17:40:13,556 [Worker-541] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:40:13,638 [Worker-541] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/src/main/java
+2012-12-31 17:40:13,642 [Worker-541] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/test/java
+2012-12-31 17:40:13,671 [Worker-541] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-12-31 17:40:14,629 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:40:14,651 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:40:14,674 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:40:25,275 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 17:40:32,875 [Worker-539] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 17:40:32,875 [Worker-539] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package
+2012-12-31 17:42:09,540 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:42:09,603 [Worker-537] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/src/main/java
+2012-12-31 17:42:09,606 [Worker-537] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/test/java
+2012-12-31 17:42:09,637 [Worker-537] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-12-31 17:42:09,658 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:42:09,707 [Worker-537] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/src/main/java
+2012-12-31 17:42:09,713 [Worker-537] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CspaceInstallerExtensions/test/java
+2012-12-31 17:42:09,742 [Worker-537] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-12-31 17:42:10,593 [Worker-540] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:42:10,614 [Worker-540] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:43:32,083 [Worker-540] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:43:32,093 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:32,256 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.2/httpclient-4.2.2.pom
+2012-12-31 17:43:32,258 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.2/httpclient-4.2.2.pom
+2012-12-31 17:43:32,350 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:32,412 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.2/httpcomponents-client-4.2.2.pom
+2012-12-31 17:43:32,449 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.2/httpcomponents-client-4.2.2.pom
+2012-12-31 17:43:32,490 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:32,552 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/6/project-6.pom
+2012-12-31 17:43:32,617 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/6/project-6.pom
+2012-12-31 17:43:32,714 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:32,789 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2.pom
+2012-12-31 17:43:32,789 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2.pom
+2012-12-31 17:43:32,827 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:32,889 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.2/httpcomponents-core-4.2.2.pom
+2012-12-31 17:43:32,918 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.2/httpcomponents-core-4.2.2.pom
+2012-12-31 17:43:33,074 [Worker-540] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 17:43:33,155 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.2/httpclient-4.2.2.jar
+2012-12-31 17:43:33,196 [New I/O client worker #13-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2.jar
+2012-12-31 17:43:34,569 [New I/O client worker #13-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2.jar
+2012-12-31 17:43:35,034 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.2/httpclient-4.2.2.jar
+2012-12-31 17:44:53,143 [Worker-538] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:44:53,215 [Worker-538] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-12-31 17:44:53,215 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/src/main/resources
+2012-12-31 17:44:53,218 [Worker-538] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-12-31 17:44:53,218 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/src/test/resources
+2012-12-31 17:45:22,517 [Worker-543] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:45:26,508 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 17:45:26,565 [Worker-537] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-12-31 17:45:26,565 [Worker-537] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/src/main/resources
+2012-12-31 17:45:26,567 [Worker-537] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-12-31 17:45:26,567 [Worker-537] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/src/test/resources
+2012-12-31 17:45:33,825 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 17:45:44,209 [Worker-540] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 17:45:44,209 [Worker-540] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package
+2012-12-31 18:03:14,295 [Worker-537] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:05:05,685 [Worker-538] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:05:05,721 [pool-23-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/repo/com/install4j/i4jruntime/1.0/i4jruntime-1.0.pom
+2012-12-31 18:05:05,722 [Worker-538] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 18:05:05,956 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/install4j/i4jruntime/1.0/i4jruntime-1.0.pom
+2012-12-31 18:05:05,959 [Worker-538] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.install4j:i4jruntime:jar:1.0 is missing, no dependency information available
+2012-12-31 18:05:05,964 [pool-25-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/repo/com/install4j/i4jruntime/1.0/i4jruntime-1.0.jar
+2012-12-31 18:05:05,965 [Worker-538] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 18:05:06,081 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/install4j/i4jruntime/1.0/i4jruntime-1.0.jar
+2012-12-31 18:07:28,562 [Worker-545] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:07:28,563 [Worker-545] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B test
+2012-12-31 18:09:59,456 [Worker-538] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:09:59,485 [pool-27-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/repo/junit/junit/4.8.1/junit-4.8.1.pom
+2012-12-31 18:09:59,486 [Worker-538] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 18:09:59,629 [pool-29-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:/home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/repo/junit/junit/4.8.1/junit-4.8.1.jar
+2012-12-31 18:09:59,631 [Worker-538] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 24
+2012-12-31 18:10:12,260 [Worker-548] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:10:12,260 [Worker-548] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B test
+2012-12-31 18:10:43,372 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 18:10:49,719 [Worker-545] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:10:49,719 [Worker-545] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package
+2012-12-31 18:16:28,255 [Worker-550] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:479) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:328) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'plugins' (position: START_TAG seen ...</testSourceDirectory>\n    <plugins>... @30:14) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	... 5 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'plugins' (position: START_TAG seen ...</testSourceDirectory>\n    <plugins>... @30:14) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:117) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1159) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 7 common frames omitted
+2012-12-31 18:18:36,721 [Worker-547] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:19:17,453 [Worker-538] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:20:35,122 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 18:20:41,457 [Worker-550] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:20:41,457 [Worker-550] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package
+2012-12-31 18:21:49,971 [Worker-538] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:22:10,715 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 18:22:15,135 [Worker-538] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:22:15,135 [Worker-538] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package
+2012-12-31 18:23:24,028 [Worker-547] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: CspaceInstallerExtensions:CspaceInstallerExtensions:0.0.1-SNAPSHOT @ /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions/pom.xml.
+2012-12-31 18:23:56,527 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-12-31 18:24:26,726 [Worker-538] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rob/safe_amerika/development/collection_space/java_source/CspaceInstallerExtensions
+2012-12-31 18:24:26,726 [Worker-538] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package

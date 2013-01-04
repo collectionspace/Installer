@@ -1,0 +1,10 @@
+<record id="place" type="authority">
+    <instances id="place">
+        <instance id="place-tgn_place">
+			<nptAllowed>false</nptAllowed>
+        </instance>
+        <instance id="place-place">
+			<nptAllowed>false</nptAllowed>
+        </instance>
+    </instances>
+</record>
