@@ -1,4 +1,4 @@
-installer
+installer (see https://github.com/cspace-puppet instead)
 =========
 
 This repository contains prototype CollectionSpace installer code.
